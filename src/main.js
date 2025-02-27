@@ -6,3 +6,9 @@ function getCATFact() {
         })
         .catch(error => console.error(error));
 }
+
+document.getElementById("colorBtn").addEventListener("click", function() {
+    const colors = ["#545454", "#ffffff"];
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.backgroundColor = randomColor;
+});
