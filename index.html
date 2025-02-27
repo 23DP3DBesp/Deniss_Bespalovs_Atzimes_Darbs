@@ -1,40 +1,83 @@
 <!DOCTYPE html>
-<html lang="lv">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaķu Fakti</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BMW</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <header>
-        <img src="src/image/image.png" alt="Logo" id="logo">
-        <h1>Kaķu Fakti</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Main</a></li>
-                <li><a href="#about">Par Mums</a></li>
-                <li><a href="#facts">Kaķu Fakti</a></li>
-                <li><a href="#contact">Kontakti</a></li>
+    <header class="header">
+        <nav class="nav">
+            <ul class="navbar-links">
+                <li class="html">
+                    <a href="#bar" class="html-link">
+                        BMW
+                    </a>
+                    <ul class="html-sub-menu">
+                        <li><a href="#home">Sākums</a></li>
+                        <li><a href="#history">Vēsture</a></li>
+                        <li><a href="#fastest">Ātrākie</a></li>
+                        <li><a href="#newest">Jaunākie</a></li>
+                        <li><a href="#oldest">Vecākie</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero">
-        <h2>Change car</h2>
-        <button id="changeCar">Random Car</button>
-    </section>
+    <div class="content-wrapper">
+        <section id="home" class="section">
+            <div class="section-content">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW Logo" class="bmw-logo">
+                <h1 class="title1">Laipni lūdzam BMW pasaulē! Izpētiet vēsturi, jaunākos modeļus un inovācijas no viena no prestižākajiem automobiļu zīmoliem pasaulē.</h1>
+            </div>
+        </section>
 
-    <section id="facts">
-        <h2>Kaķu Fakti</h2>
-        <p id="fact">Ielādējam kaķu faktu...</p>
-        <button id="loadFact">+vibe button</button>
-    </section>
+        <section id="history" class="section">
+            <h2 class="title2">BMW vēsture</h2>
+            <div class="c2">
+                <p class="description2">BMW (Bayerische Motoren Werke) tika dibināts 1916. gadā un kopš tā laika ir kļuvis par luksusa, veiktspējas un inovāciju simbolu. No lidmašīnu dzinējiem līdz augstas veiktspējas automašīnām, BMW ir bagāta inženierijas vēsture.</p>
+                <img src="https://www.historisches-lexikon-bayerns.de/images/thumb/7/70/BMW_Werbeanzeige.jpg/1200px-BMW_Werbeanzeige.jpg" alt="BMW vēsture" class="bmw-history">
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2025 ZXCLegenda aka zitrax mode.</p>
-    </footer>
+        <section id="fastest" class="section">
+            <h2 class="title3">Ātrākie BMW modeļi</h2>
+            <div class="c3">
+                <img src="https://www.pcarmarket.com/static/media/uploads/galleries/photos/uploads/galleries/v-0017331-andrew-pappas-2021-bmw-m5-competition/.thumbnails/A-002.jpg/A-002-tiny-2048x0-0.5x0.jpg" alt="Ātrākais BMW" class="bmw-fastest">
+                <p class="description3">BMW ir pazīstams ar augstas veiktspējas automobiļu ražošanu. BMW M5 Competition un BMW M8 ir starp ātrākajiem modeļiem, kas spēj sasniegt 0-100 km/h mazāk nekā 3 sekundēs.</p>
+            </div>
+        </section>
 
+        <section id="newest" class="section">
+            <h2 class="title4">Jaunākie BMW modeļi</h2>
+            <div class="c4">
+                <p class="description4">BMW turpina inovēt ar elektriskajiem un hibrīda modeļiem. BMW iX un i4 atspoguļo zīmola apņemšanos nodrošināt ilgtspējīgu mobilitāti, vienlaikus saglabājot augstu veiktspēju.</p>
+                <img src="https://hips.hearstapps.com/hmg-prod/images/2023-bmw-ix-m60-108-1653422436.jpg?crop=0.825xw:0.695xh;0.119xw,0.0745xh&resize=2048:*" alt="Jaunākais BMW" class="bmw-newest">
+            </div>
+        </section>
+
+        <section id="oldest" class="section">
+            <h2 class="title5">Klasiskie BMW modeļi</h2>
+            <div class="c5">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/BMW_328_%2816.06.2007%29.jpg" alt="Klasiskais BMW" class="bmw-classic">
+                <p class="description5">BMW klasiskie modeļi, piemēram, BMW 328 Roadster un BMW 2002, ir leģendāri automobiļu vēsturē. Šie transportlīdzekļi ir veidojuši BMW reputāciju kā augstas veiktspējas zīmols.</p>
+            </div>
+        </section>
+
+        <section id="bmw-facts">
+            <button class="button" onclick="getCATFact()">Get Cat Fact</button>
+            <p id="cat-fact">Interesanti fakti par kakiem</p>
+        </section>
+    </div>
     <script src="src/main.js"></script>
 </body>
+<footer>
+    <div class="footer">
+        <p>© 2025 ZXCLegenda</p>
+    </div>
+</footer>
 </html>
